@@ -1,0 +1,2 @@
+// qmldir
+singleton HaqtonStyle 1.0 Style.qml

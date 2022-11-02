@@ -1,0 +1,12 @@
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  host: <%= ENV['HAQTON_DB_HOST'] %>
+  username: <%= ENV['HAQTON_DB_USERNAME'] %>
+  password: <%= ENV['HAQTON_DB_PASSWORD'] %>
+  database: <%= ENV['HAQTON_DB_DATABASE'] %>
